@@ -34,6 +34,10 @@ while True:
             elif len(parseOutput[i]) == 2:
                 quantity = int(parseOutput[i][0])
                 sides = int(parseOutput[i][1])
+
+                # checks for valid number of sides and quantity
+                if quantity <=0 or sides <=0:
+                    raise Exception("Number of dice or sides cannot be zero or lower.")
                 tempMultiDice = MultiDice(Die(sides), quantity)
                 total, comboName, rollList = tempMultiDice.roll()
                 print("+"+str(total), comboName, rollList)
@@ -44,7 +48,7 @@ while True:
         print("Total:", runningTotal)
         
     except:
-        print("Input was either incorrect format or blank. Please try again.")
-        
+        print("Input was either incorrect format, out of range, or blank. Please try again.")
+    
 
 
