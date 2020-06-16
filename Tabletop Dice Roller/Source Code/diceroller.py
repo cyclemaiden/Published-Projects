@@ -9,8 +9,11 @@ from stringparser import parse
 while True:
     try:
         diceRollerInput = input("Enter dice roll (in the format of 3d6 d10 -2): ")
+        if diceRollerInput == '':
+            raise Exception("Blank input not accepted.")
         parseOutput = parse(diceRollerInput)
         # print(parseOutput)
+
 
         # Allows user to type exit to leave.
         if diceRollerInput == "exit":
@@ -41,7 +44,7 @@ while True:
         print("Total:", runningTotal)
         
     except:
-        print("An error occured. Try again.")
+        print("Input was either incorrect format or blank. Please try again.")
         
 
 

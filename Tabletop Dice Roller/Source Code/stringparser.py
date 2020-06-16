@@ -15,20 +15,10 @@ def parse(inputString):
         if quantitiesAndSizes[i][0] == '':
             quantitiesAndSizes[i][0] = '1'
 
-    '''
-    # This block throws an exception if any of the values in the nested list
-    # aren't integers like they're supposed to be.
-    for i in range(len(quantitiesAndSizes)):
-        # Modifiers
-        if len(quantitiesAndSizes[i]) == 1:
-            if quantitiesAndSizes[i][0] 
-
-        # Dice Rolls
-        elif len(quantitiesAndSizes[i]) == 2:
-            for i in range(2):
-                if
-    '''
-
+    # This block prevents a blank input from producing 1 as a result from
+    # the above block.
+    if len(quantitiesAndSizes) == 1 and len(quantitiesAndSizes[0]) == 1:
+        quantitiesAndSizes[0][0] == '0'
     
     return(quantitiesAndSizes)
     
