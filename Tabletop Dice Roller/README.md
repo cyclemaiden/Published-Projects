@@ -4,6 +4,9 @@ This is a simple dice rolling program for tabletop role playing games. You can s
 
 ## Table of Contents
 Coming soon!
+- [Usage](#Usage)
+- [Examples](#Examples)
+  - [Example 1](#Example-1:-Single-Die)
 
 ## Usage
 There is a Windows binary compiled using PyInstaller under ./Compiled/dist/ that you can use.
