@@ -6,7 +6,14 @@ This is a simple dice rolling program for tabletop role playing games. You can s
 Coming soon!
 - [Usage](#Usage)
 - [Examples](#Examples)
-  - [Example 1](#Example-1-Single-Die)
+  - [Example 1: Single Die](#Example-1-Single-Die)
+  - [Example 2: Multiple Dice of a Single Type](#Example-2-Multiple-Dice-of-a-Single-Type)
+  - [Example 3: Multiple Dice of Different Types](#Example-3-Multiple-Dice-of-Different-Types)
+  - [Example 4: Adding Positive Modifiers](#Example-4-Adding-Positive-Modifiers)
+  - [Example 5: Adding Negative Modifiers](#Example-5-Adding-Negative-Modifiers)
+- [How to Compile this Program Yourself](#How-to-Compile-this-Program-Yourself)
+- [Future Plans](#Future-Plans)
+- [Known Issues](#Known-Issues)
 
 ## Usage
 There is a Windows binary compiled using PyInstaller under ./Compiled/dist/ that you can use.
@@ -141,10 +148,10 @@ Go into the folder with diceroller.py and run this command to compile:
 The onefile argument causes the output file (found in the ./dist directory) to produce a single executable file that can easily be distributed.
 
 
-# Future Plans
+## Future Plans
 - [x] Compile the program so it can run cross platform without a Python installation using PyInstaller
 - [ ] Customizable presets for common dice rolls
 - [ ] GUI interface
 
-# Known Issues
+## Known Issues
 - None yet, but I'll add them here as I find them
