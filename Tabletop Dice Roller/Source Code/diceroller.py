@@ -18,6 +18,7 @@ while True:
 
         runningTotal = 0
         for i in range(len(parseOutput)):
+            # Modifiers
             if len(parseOutput[i]) == 1:
                 modifier = int(parseOutput[i][0])
                 if modifier < 0:
@@ -26,6 +27,7 @@ while True:
                     print("+"+str(modifier))
 
                 runningTotal += modifier
+            # Dice Rolls
             elif len(parseOutput[i]) == 2:
                 quantity = int(parseOutput[i][0])
                 sides = int(parseOutput[i][1])
@@ -33,6 +35,8 @@ while True:
                 total, comboName, rollList = tempMultiDice.roll()
                 print("+"+str(total), comboName, rollList)
                 runningTotal += total
+            else:
+                raise Exception("Incorrect list length. It should be one or two.")
 
         print("Total:", runningTotal)
         
