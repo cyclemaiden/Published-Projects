@@ -33,7 +33,6 @@ while True:
                 total, comboName, rollList = tempMultiDice.roll()
                 print("+"+str(total), comboName, rollList)
                 runningTotal += total
-                # TODO single dice in the form of d20 don't work
 
         print("Total:", runningTotal)
         
