@@ -39,6 +39,6 @@ while True:
         
     except:
         print("An error occured. Try again.")
-        break
+        
 
 
