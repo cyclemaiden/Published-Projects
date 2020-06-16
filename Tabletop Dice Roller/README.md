@@ -3,7 +3,6 @@
 This is a simple dice rolling program for tabletop role playing games. You can set it to roll multiple dice of any size as well as add modifiers. It is written in Python. You can give it commands to do something simple as rolling a six-sided die or rolling several multiples of different dice while adding modifiers.
 
 ## Table of Contents
-Coming soon!
 - [Usage](#Usage)
 - [Examples](#Examples)
   - [Example 1: Single Die](#Example-1-Single-Die)
