@@ -6,9 +6,13 @@ This is a simple dice rolling program for tabletop role playing games. You can s
 Coming soon!
 
 ## Usage
-Since this program isn't compiled yet, you can run it by opening diceroller.py (in the Source Code folder) in Python.
+There is a Windows binary compiled using PyInstaller under ./Compiled/dist/ that you can use.
 
-The program will prompt you to enter a dice roll.
+If you don't want to compile it, you can run it by opening diceroller.py (in the Source Code folder) in Python, which should work on any OS with Python.
+
+If you want to compile it yourself or want to compile the program for a non-Windows computer, scroll down to the section near the end where I will detail how I compiled it using PyInstaller.
+
+Regardless, when you open the program it will prompt you to enter a dice roll.
 
 > Enter dice roll (in the format of 3d6 d10 -2): ___
 
@@ -115,8 +119,23 @@ Program Display:
 >
 >Total: 317
 
+
+## How to Compile this Program Yourself
+I used PyInstaller so that's what I'll give instructions for here. PyInstaller should also be compatible with multiple platforms so you should be able to make your own compiled version that is compatible with your system.
+
+These are super basic and I recommend looking at the actual documentation for using PyInstaller.
+
+If you haven't installed PyInstaller, install it using pip:
+> pip install pyinstaller
+
+Go into the folder with diceroller.py and run this command to compile:
+> pyinstaller --onefile diceroller.py
+
+The onefile argument causes the output file (found in the ./dist directory) to produce a single executable file that can easily be distributed.
+
+
 # Future Plans
-- [ ] Compile the program so it can run cross platform without a Python installation using PyInstaller
+- [x] Compile the program so it can run cross platform without a Python installation using PyInstaller
 - [ ] Customizable presets for common dice rolls
 - [ ] GUI interface
 
