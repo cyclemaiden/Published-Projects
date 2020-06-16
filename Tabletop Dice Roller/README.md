@@ -16,6 +16,10 @@ Regardless, when you open the program it will prompt you to enter a dice roll.
 
 > Enter dice roll (in the format of 3d6 d10 -2): ___
 
+Type "exit" at any time to close the program.
+
+> Enter dice roll (in the format of 3d6 d10 -2): exit
+
 See the examples for how to roll dice with the program.
 
 ## Examples
