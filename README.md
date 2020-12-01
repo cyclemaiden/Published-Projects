@@ -1,4 +1,4 @@
-# Sheepbun Monster's Published Projects
+# Sheepbun Monster's Other Published Projects
 
 Hi! If you're reading this, you've stumbled upon my small repository of projects that I've decided to make open source.
 
